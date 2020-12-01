@@ -269,12 +269,57 @@ header {
     }
 }
 
-// #about-slider {
-//     .slide-img {
-//         vertical-align: middle;
-//         overflow: hidden;
-//     }
-// }
+#about-slider {
+    overflow: hidden;
+    position: relative;
+    .item {
+        background-size: cover;
+        background-position: center;
+        padding: 20em 10px;
+        max-width: 100%;
+        height: auto;
+        &.slide-1 {
+            background-image: url(../image/about-image/about-slider1.jpg);
+        }
+        &.slide-2 {
+            background-image: url(../image/about-image/about-slider2.jpg);
+        }
+        &.slide-3 {
+            background-image: url(../image/about-image/about-slider3.jpg);
+        }
+        &.slide-4 {
+            background-image: url(../image/about-image/about-slider4.jpg);
+        }
+        &.slide-5 {
+            background-image: url(../image/about-image/about-slider5.jpg);
+        }
+        &.slide-6 {
+            background-image: url(../image/about-image/about-slider6.jpg);
+        }
+    }
+    .slide-text {
+        position: absolute;
+        top: 35%;
+        left: 40%;
+        z-index: 789;
+        text-align: center;
+        h4 {
+            font-size: 48px;
+            color: #FFFFFF;
+            font-weight: bold;
+            margin: 10px 0px 30px;
+        }
+        a {
+            padding: 10px 20px;
+            font-size: 20px;
+            color: #FFFFFF;
+            font-weight: normal;
+            background: var(--orange-color, #FA5636);
+            border: none;
+        }
+    }
+}
+
 #team {
     padding-bottom: 100px;
     .top-text {
@@ -290,6 +335,26 @@ header {
     .items {
         margin-top: 50px;
         text-align: center;
+        .team-img {
+            position: relative;
+            &:hover {
+                .team {
+                    opacity: .7;
+                }
+            }
+        }
+        .team {
+            border-radius: 50%;
+            position: absolute;
+            background: var(--link-color, #5191FA);
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            opacity: 0;
+            transition: .3s ease-in-out;
+        }
         .team-text-1 {
             p {
                 font-size: 20px;
@@ -431,6 +496,9 @@ header {
             .right-menu {
                 ul {
                     .search-ico {
+                        display: none;
+                    }
+                    a {
                         display: none;
                     }
                 }

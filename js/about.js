@@ -1,4 +1,4 @@
-$("#about-slider").slick({
+$("#about-slider .slider-item").slick({
     dots: true,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -15,8 +15,8 @@ $("#about-slider").slick({
         {
             breakpoint: 600,
             settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2,
+                slidesToShow: 1,
+                slidesToScroll: 1,
 
 
             }

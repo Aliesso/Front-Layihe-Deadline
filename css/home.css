@@ -554,6 +554,9 @@ header .header-text h5 {
   header .mob-menu .right-menu ul .search-ico {
     display: none;
   }
+  header .mob-menu .right-menu ul a {
+    display: none;
+  }
   #Special .special-item .special-text a {
     opacity: 1;
     margin-bottom: -10em;

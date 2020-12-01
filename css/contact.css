@@ -379,6 +379,9 @@ header .header-text h1 {
   header .mob-menu .right-menu ul .search-ico {
     display: none;
   }
+  header .mob-menu .right-menu a {
+    display: none;
+  }
   header .header-text h1 {
     font-size: 35px;
   }

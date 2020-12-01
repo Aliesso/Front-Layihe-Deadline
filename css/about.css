@@ -260,6 +260,67 @@ header .header-text h1 {
   font-size: 20px;
 }
 
+#about-slider {
+  overflow: hidden;
+  position: relative;
+}
+
+#about-slider .item {
+  background-size: cover;
+  background-position: center;
+  padding: 20em 10px;
+  max-width: 100%;
+  height: auto;
+}
+
+#about-slider .item.slide-1 {
+  background-image: url(../image/about-image/about-slider1.jpg);
+}
+
+#about-slider .item.slide-2 {
+  background-image: url(../image/about-image/about-slider2.jpg);
+}
+
+#about-slider .item.slide-3 {
+  background-image: url(../image/about-image/about-slider3.jpg);
+}
+
+#about-slider .item.slide-4 {
+  background-image: url(../image/about-image/about-slider4.jpg);
+}
+
+#about-slider .item.slide-5 {
+  background-image: url(../image/about-image/about-slider5.jpg);
+}
+
+#about-slider .item.slide-6 {
+  background-image: url(../image/about-image/about-slider6.jpg);
+}
+
+#about-slider .slide-text {
+  position: absolute;
+  top: 35%;
+  left: 40%;
+  z-index: 789;
+  text-align: center;
+}
+
+#about-slider .slide-text h4 {
+  font-size: 48px;
+  color: #FFFFFF;
+  font-weight: bold;
+  margin: 10px 0px 30px;
+}
+
+#about-slider .slide-text a {
+  padding: 10px 20px;
+  font-size: 20px;
+  color: #FFFFFF;
+  font-weight: normal;
+  background: var(--orange-color, #FA5636);
+  border: none;
+}
+
 #team {
   padding-bottom: 100px;
 }
@@ -279,6 +340,28 @@ header .header-text h1 {
 #team .items {
   margin-top: 50px;
   text-align: center;
+}
+
+#team .items .team-img {
+  position: relative;
+}
+
+#team .items .team-img:hover .team {
+  opacity: .7;
+}
+
+#team .items .team {
+  border-radius: 50%;
+  position: absolute;
+  background: var(--link-color, #5191FA);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  opacity: 0;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
 }
 
 #team .items .team-text-1 p {
@@ -414,6 +497,9 @@ header .header-text h1 {
     display: none;
   }
   header .mob-menu .right-menu ul .search-ico {
+    display: none;
+  }
+  header .mob-menu .right-menu ul a {
     display: none;
   }
   header .header-text h1 {
